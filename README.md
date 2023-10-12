@@ -376,3 +376,24 @@ Penjelasan:
 - Konstruktor Bakery digunakan untuk menginisialisasi objek Bakery dengan parameter ID, nama, harga, dan tipe.
 - Terdapat getter (getType) dan setter (setType) untuk mengakses dan mengubah nilai atribut "type."
 - Metode getMenu di-override dari kelas "CafeMenu" untuk menampilkan informasi menu Bakery. Metode ini mencakup ID, nama, harga, dan tipe Bakery, yang kemudian ditampilkan ke layar.
+
+<h1>Output Program:</h1>
+
+- Tampilan Menu
+
+![Screenshot 2023-10-12 202849](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/4c1a769c-9ac2-4cc7-b96f-6fc825cce6bf)
+
+- Opsi 1 (Tampilkan Menu Coffeshop)
+1. ![Screenshot 2023-10-12 203204](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/a67587cc-29de-44a5-8534-5077c18763e8)
+2. ![Screenshot 2023-10-12 203215](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/e616d889-b54f-4ec5-af37-15c8429c0a4d)
+
+- Opsi 2 (Tambah Menu Coffeshop)
+1. ![Screenshot 2023-10-12 202956](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/1a1f7baf-64dd-4724-855d-839b3a92d601)
+2. ![Screenshot 2023-10-12 203141](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/627fda81-9c27-44ac-84de-263e45f0c06e)
+
+- Opsi 3 (Update Menu Coffeshop)
+![Screenshot 2023-10-12 204012](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/4863170e-89ba-422a-9b16-916fe64d5851)
+![Screenshot 2023-10-12 204107](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/4a2e1279-4a73-419c-bcdc-066239fcda29)
+
+
+

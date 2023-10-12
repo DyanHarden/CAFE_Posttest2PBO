@@ -164,3 +164,120 @@ Penjelasan:
 - Terdapat getter untuk mengambil nilai dari atribut id, name, dan price.
 - Terdapat metode abstrak getMenu(), yang harus diimplementasikan oleh kelas turunan. Metode ini akan digunakan untuk menampilkan detail dari item menu.
 - Terdapat setter setName() dan setPrice() yang digunakan untuk mengubah nilai name dan price item menu.
+
+<h2>Package 2 coffeshop: File "Coffeshop.java"</h2>
+
+``` java
+package coffeshop;
+import java.util.ArrayList;
+
+// ArrayList untuk menyimpan daftar Coffe dan Bakery
+public final class Coffeshop {
+    private static final ArrayList<Coffe> coffes = new ArrayList<>();
+    private static final ArrayList<Bakery> bakeries = new ArrayList<>();
+```
+Penjelasan:
+- Kelas "CoffeShop" adalah kelas yang memiliki metode CRUD (Create, Read, Update, Delete) untuk mengelola daftar Coffe (kopi) dan Bakery (roti). 
+- Terdapat dua ArrayList yang digunakan untuk menyimpan daftar Coffe (coffes) dan Bakery (bakeries). Kedua ArrayList ini bersifat statis dan bersifat final, yang berarti mereka tidak dapat diubah setelah diinisialisasi.
+
+``` java
+//    METODE CRUD UNTUK DAFTAR COFFE
+    public static void addCoffe(Coffe coffe) {
+        coffes.add(coffe);
+    }
+
+    public static void getMenuCoffe(){
+        for (Coffe coffe : coffes) {
+            coffe.getMenu();
+        }
+    }
+
+    public static void updateCoffe(String id, String name, int price, String type) {
+        for (Coffe coffe : coffes) {
+            if (coffe.getId().equals(id)) {
+                coffe.setName(name);
+                coffe.setPrice(price);
+                coffe.setType(type);
+                return;
+            }
+        }
+    }
+
+
+    public static void deleteCoffe(String id) {
+        for (Coffe coffe : coffes) {
+            if (coffe.getId().equals(id)) {
+                coffes.remove(coffe);
+                break;
+            }
+        }
+    }
+
+    public static boolean getIdCoffe(String id) {
+        for (Coffe coffe : coffes) {
+            if (coffe.getId().equals(id)) {
+                return true;
+            }
+        }
+        return false;
+    }
+```
+
+Penjelasan:
+- Metode CRUD untuk Coffe (kopi) mencakup:
+1. addCoffe: Menambahkan objek Coffe ke dalam daftar.
+2. getMenuCoffe: Menampilkan menu daftar Coffe.
+3. updateCoffe: Memperbarui informasi Coffe berdasarkan ID yang diberikan.
+4. deleteCoffe: Menghapus Coffe dari daftar berdasarkan ID yang diberikan.
+5. getIdCoffe: Memeriksa apakah Coffe dengan ID tertentu ada dalam daftar.
+
+``` java
+//    METODE CRUD UNTUK DAFTAR BAKERY
+    public static void addBakery(Bakery bakery) {
+        bakeries.add(bakery);
+    }
+
+    public static void getMenuBakery(){
+        for (Bakery bakery : bakeries) {
+            bakery.getMenu();
+        }
+    }
+
+    public static void updateBakery(String id, String name, int price, String type) {
+        for (Bakery bakery : bakeries) {
+            if (bakery.getId().equals(id)) {
+                bakery.setName(name);
+                bakery.setPrice(price);
+                bakery.setType(type);
+                return;
+            }
+        }
+    }
+
+    public static void deleteBakery(String id) {
+        for (Bakery bakery : bakeries) {
+            if (bakery.getId().equals(id)) {
+                bakeries.remove(bakery);
+                break;
+            }
+        }
+    }
+
+    public static boolean getIdBakery(String id) {
+        for (Bakery bakery : bakeries) {
+            if (bakery.getId().equals(id)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
+Penjelasan:
+- Metode CRUD untuk Bakery (roti) mirip dengan metode CRUD untuk Coffe dan mencakup:
+1. addBakery: Menambahkan objek Bakery ke dalam daftar.
+2. getMenuBakery: Menampilkan menu daftar Bakery.
+3. updateBakery: Memperbarui informasi Bakery berdasarkan ID yang diberikan.
+4. deleteBakery: Menghapus Bakery dari daftar berdasarkan ID yang diberikan.
+5. getIdBakery: Memeriksa apakah Bakery dengan ID tertentu ada dalam daftar.

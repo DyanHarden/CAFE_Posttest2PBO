@@ -4,7 +4,7 @@
 <h2>NIM:   2209116022</h2>
 <br></br>
 <h1>Penjelasan Source Code:</h1>
-<h2><b>Package 1 Main: File "Main.java</b></h2>
+<h2><b>Package 1 Main: File "Main.java"</b></h2>
 
 ![image](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/b3e5afe1-5046-4170-a8a1-4b9253707173)
 
@@ -110,3 +110,57 @@ Program menggunakan pernyataan switch untuk menangani setiap opsi yang dipilih o
 - Opsi 4: Menghapus data menu CoffeShop. Pengguna diminta untuk memasukkan ID menu yang akan dihapus.
 - Opsi 5: Keluar dari program.
 - Opsi lain: Menampilkan pesan bahwa pilihan tidak ditemukan.
+
+<h2>Package 2 coffeshop: File "CafeMenu.Java"</h2>
+
+``` java
+package coffeshop;
+
+//  Deklarasi kelas abstrak CafeMenu
+abstract class CafeMenu {
+    private final String id;
+    private String name;
+    private int price;
+
+    // Konstruktor kelas CafeMenu
+    public CafeMenu(String id, String name, int price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+    }
+    // Getter untuk mendapatkan ID, Nama, dan Harga item menu
+    public final String getId() {
+        return id;
+    }
+
+    public final String getName() {
+        return name;
+    }
+
+    public final int getPrice() {
+        return price;
+    }
+
+    // Metode abstrak yang harus diimplementasikan oleh kelas turunan
+    public abstract void getMenu();
+
+    // Setter untuk mengubah Nama dan Harga item menu
+    public final void setName(String name) {
+        this.name = name;
+    }
+
+    public final void setPrice(int price) {
+        this.price = price;
+    }
+}
+```
+Penjelasan:
+- CafeMenu adalah kelas abstrak, yang berarti Anda tidak dapat membuat objek langsung dari kelas ini, tetapi Anda dapat menggunakan kelas ini sebagai dasar untuk kelas lain yang akan mewarisi sifat-sifat dan metode-metode tertentu.
+- Class ini memiliki tiga atribut:
+1. id: Sebuah String yang digunakan sebagai ID untuk item menu dan bersifat final, yang berarti nilainya tidak dapat diubah setelah diinisialisasi.
+2. name: Sebuah String yang menyimpan nama dari item menu.
+3. price: Sebuah bilangan bulat (int) yang menyimpan harga dari item menu.
+- Konstruktor CafeMenu digunakan untuk menginisialisasi atribut-atribut kelas ini pada saat objek kelas turunan dibuat. Konstruktor ini menerima tiga parameter: ID, nama, dan harga, dan mengatur nilai atribut sesuai dengan parameter yang diberikan.
+- Terdapat getter untuk mengambil nilai dari atribut id, name, dan price.
+- Terdapat metode abstrak getMenu(), yang harus diimplementasikan oleh kelas turunan. Metode ini akan digunakan untuk menampilkan detail dari item menu.
+- Terdapat setter setName() dan setPrice() yang digunakan untuk mengubah nilai name dan price item menu.

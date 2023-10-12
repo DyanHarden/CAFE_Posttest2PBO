@@ -288,3 +288,91 @@ Penjelasan:
 3. updateBakery: Memperbarui informasi Bakery berdasarkan ID yang diberikan.
 4. deleteBakery: Menghapus Bakery dari daftar berdasarkan ID yang diberikan.
 5. getIdBakery: Memeriksa apakah Bakery dengan ID tertentu ada dalam daftar.
+
+<h2>Package 2 Coffeshop: File "Coffeshop.java"</h2>
+
+``` java
+package coffeshop;
+
+public class Coffe extends CafeMenu {
+    private String type;
+
+//    Konstruktor Coffe
+    public Coffe(String id, String name, int price, String type) {
+        super(id, name, price);
+        this.type = type;
+    }
+
+    // Getter untuk mendapatkan tipe Coffe
+    public final String getType() {
+        return type;
+    }
+
+    // Setter untuk mengatur tipe Coffe
+    public final void setType(String type) {
+        this.type = type;
+    }
+
+    // Metode overridden untuk menampilkan menu Coffe
+    @Override
+    public final void getMenu() {
+        System.out.println("Coffe Menu");
+        System.out.println("Coffe Id: " + getId());
+        System.out.println("Coffe Name: " + getName());
+        System.out.println("Coffe Price: " + getPrice());
+        System.out.println("Coffe Type: " + getType());
+        System.out.println();
+    }
+}
+```
+Penjelasan:
+- Kelas "Coffe" merupakan representasi dari item Coffe (kopi) dalam menu kafe.
+- Terdapat atribut type yang menyimpan tipe dari Coffe.
+- Konstruktor Coffe digunakan untuk inisialisasi objek Coffe dengan mengambil parameter ID, nama, harga, dan tipe.
+- Terdapat getter (getType) dan setter (setType) untuk mengakses dan mengubah nilai atribut "type."
+- Metode getMenu di-override dari kelas "CafeMenu" untuk menampilkan informasi menu Coffe. Ini mencakup ID, nama, harga, dan tipe Coffe, yang kemudian ditampilkan ke layar.
+
+<h2>Package 2 Coffeshop: File "Coffeshop.java"</h2>
+
+``` java
+package coffeshop;
+
+public class Bakery extends CafeMenu {
+    private String type;
+
+//    Konstruktor Bakery
+    public Bakery(String id, String name, int price, String type) {
+        super(id, name, price);
+        this.type = type;
+    }
+
+    // Getter untuk mendapatkan tipe Bakery
+    public final String getType() {
+        return type;
+    }
+
+    // Setter untuk mengatur tipe Bakery
+    public final void setType(String type) {
+        this.type = type;
+    }
+
+    // Metode overridden untuk menampilkan menu Bakery
+    @Override
+    public final void getMenu() {
+        System.out.println("Bakery Menu");
+        System.out.println("Bakery Id: " + getId());
+        System.out.println("Bakery Name: " + getName());
+        System.out.println("Bakery Price: " + getPrice());
+        System.out.println("Bakery Type: " + getType());
+        System.out.println();
+    }
+}
+
+```
+
+Penjelasan:
+- Kelas "Bakery" adalah representasi dari item Bakery (roti) dalam menu kafe.
+- Terdapat atribut type yang digunakan untuk menyimpan tipe dari Bakery.
+- Konstruktor Bakery digunakan untuk menginisialisasi objek Bakery dengan parameter ID, nama, harga, dan tipe.
+- Terdapat getter (getType) dan setter (setType) untuk mengakses dan mengubah nilai atribut "type."
+- Metode getMenu di-override dari kelas "CafeMenu" untuk menampilkan informasi menu Bakery. Metode ini mencakup ID, nama, harga, dan tipe Bakery, yang kemudian ditampilkan ke layar.

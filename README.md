@@ -6,9 +6,15 @@
 <h1>Penjelasan Source Code:</h1>
 <h2><b>Package 1 Main: File "Main.java"</b></h2>
 
-![image](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/b3e5afe1-5046-4170-a8a1-4b9253707173)
+``` java
+package main;
 
-Program dimulai dengan mengimpor paket coffeshop dan java.util.Scanner.
+import coffeshop.*;
+
+import java.util.Scanner;
+```
+Penjelasan:
+- Program dimulai dengan mengimpor paket coffeshop dan java.util.Scanner.
 
 ```java
 public class Main {
@@ -30,7 +36,8 @@ public class Main {
             pilih = scanner.nextInt();
             scanner.nextLine();
 ```
-Dalam metode main(String[] args), program memulai dengan membuat objek Scanner untuk menerima input dari pengguna.
+Penjelasan:
+- Dalam metode main(String[] args), program memulai dengan membuat objek Scanner untuk menerima input dari pengguna.
 Terdapat loop do-while yang akan terus berjalan hingga pengguna memilih opsi "Exit" (pilih 5).
 Setiap iterasi loop, program menampilkan menu utama, dan pengguna diminta untuk memilih opsi (pilih 1-5).
 

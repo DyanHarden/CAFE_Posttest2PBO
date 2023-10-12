@@ -392,8 +392,19 @@ Penjelasan:
 2. ![Screenshot 2023-10-12 203141](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/627fda81-9c27-44ac-84de-263e45f0c06e)
 
 - Opsi 3 (Update Menu Coffeshop)
-![Screenshot 2023-10-12 204012](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/4863170e-89ba-422a-9b16-916fe64d5851)
-![Screenshot 2023-10-12 204107](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/4a2e1279-4a73-419c-bcdc-066239fcda29)
+1. ![Screenshot 2023-10-12 204012](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/4863170e-89ba-422a-9b16-916fe64d5851)
+2. ![Screenshot 2023-10-12 204107](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/4a2e1279-4a73-419c-bcdc-066239fcda29)
+
+- Opsi 4 (Hapus Menu Coffeshop)
+1. ![Screenshot 2023-10-12 204745](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/08cd6960-4a38-45fd-a36f-64e3c127274f)
+- Setelah dihapus:
+2. ![Screenshot 2023-10-12 204838](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/1aa69cdc-5d93-444e-bb54-c65ab2f6f4ea)
+3. ![Screenshot 2023-10-12 204857](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/abee84a6-d68d-4c7d-a772-d25065f703e7)
+
+- Opsi 5 (Keluar Program)
+1. ![Screenshot 2023-10-12 205055](https://github.com/DyanHarden/CAFE_Posttest2PBO/assets/94899238/ae359883-27d9-4149-8f66-cfcac91cd8ed)
+
+
 
 
 
